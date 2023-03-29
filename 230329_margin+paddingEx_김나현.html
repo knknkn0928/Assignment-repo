@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>html 패딩</title>
+  <style>
+
+    body { margin: 100px auto; font-family:'나눔스퀘어라운드', sans-serif; }
+  
+    h1 { 
+      width:500px;
+      background-color: cornflowerblue;
+      text-align: center;
+      margin:auto;
+      padding:50px; color:#fff;
+      border-radius: 50px 50px 0 0;
+      border-bottom: solid 10px orange;
+    }
+    
+    h2 { text-align: center; text-decoration-line:line-through; color:cornflowerblue; }
+
+    li {
+      width:500px;
+      border:solid 1px royalblue;
+      color:royalblue;
+      padding: 10px 10px;
+      margin: 10px auto;
+     }
+
+     li:hover{ 
+      background-color: aliceblue; color:orange; 
+      border: 1px orangered dashed;
+    }
+  
+    .box {
+      height:30px; font-weight:bold; 
+      text-align: center;
+    }
+  
+    a { text-decoration:none; }
+    div {
+      font-size:20px;
+      border:solid 1px #fff;
+      padding:10px 0 0 0 ;
+      background-color: cornflowerblue; color:azure;
+    }
+    div:hover{ background-color: royalblue; color:orange; border: azure; }
+  
+  </style>
+</head>
+
+<body>
+  <h1>margin padding 연습</h1>
+  <h2>조건</h2>
+  <section name="list">
+    <ul>
+      <li>마우스 이벤트</li>
+      <li>사이트 새 창으로 이동</li>
+      <li>중앙 정렬</li>
+    </ul>
+  </section>
+
+  <section name="link">
+      <a href="https://www.naver.com/" target="_blank"><div class="box box1">네이버</div></a>
+    
+      <a href="https://www.daum.net/" target="_blank"><div class="box box2">다음</div></a>
+
+      <a href="https://www.google.co.kr/?hl=ko" target="_blank"><div class="box box3">구글</div></a>
+  </section>
+</body>
+</html>
