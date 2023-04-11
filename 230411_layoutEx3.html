@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>230411_layoutEx3</title>
+
+  <style>
+
+    * {
+      padding:0;
+    }
+
+    .clearfix::after {
+      content:"";
+      display: block;
+      clear:both;
+    }
+
+    body, menu {
+      width:940px;
+      margin: 0 auto;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .gnb {
+      list-style: none;
+      background-color: #5463ff;
+      padding:0 170px;
+      /* 940 - 120*5(600) 340 */
+    }
+
+    .gnb li {
+      float:left;
+      background-color: #5463ff;
+
+      width:120px;
+      height: 60px;
+      line-height:60px;
+    }
+
+    .gnb li a {
+      width:120px; height:60px;
+      display: block;
+      font-weight: bold;
+      color:#fff;
+    }
+
+    .gnb li a:hover {
+      background-color: #fff;
+      color:#5463ff;
+    }
+
+    h2 {
+      background-color: gold;
+      height: 100px;
+      line-height: 100px;
+      margin:30px 0 30px 0;
+    }
+
+    section h3 {
+      background-color: red;
+      width:300px; height:67px;
+      line-height: 67px;
+
+      float:left;
+      margin: 20px 0 40px 0;
+    }
+
+    section .first {
+      margin-right:20px;
+    }
+
+    section .last {
+      margin-left:20px;
+    }
+
+
+    .footer {
+      clear:both;
+      background-color:darkcyan;
+      height:60px;
+      line-height:60px;
+    }
+
+
+  </style>
+  
+</head>
+<body>
+
+  <h1>로고</h1>
+
+  <menu>
+    <ul class="gnb clearfix">
+      <li><a href="#">홈</a></li>
+      <li><a href="#">상품</a></li>
+      <li><a href="#">소개</a></li>
+      <li><a href="#">서비스</a></li>
+      <li><a href="#">연락처</a></li>
+    </ul>
+  </menu>
+
+  <h2>컨텐츠</h2>
+
+  <section>
+    <h3 class="first">1번째 열</h3>
+    <h3>2번째 열</h3>
+    <h3 class="last">3번째 열</h3>
+  </section>
+
+  <h3 class="footer">ⓒcopyright 2022</h3>
+
+</body>
+</html>
