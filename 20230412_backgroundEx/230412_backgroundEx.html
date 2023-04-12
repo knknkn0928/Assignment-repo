@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>backgroundEx_</title>
+    <style>
+        body {
+            margin:20px auto;
+            border: 3px solid #000;
+            border-radius: 30px;
+            width: 500px; height:250px;
+            text-align: center;
+        }
+
+        section input {
+            width:300px; height: 50px;
+            border: 2px solid #000;
+            border-radius: 50px;
+            line-height: 50px;
+            
+
+            background-repeat: no-repeat;
+            background-size: 10%;
+            background-position: 5% center;
+            
+            padding: 0 0 0 70px;
+        }
+
+        input::placeholder {
+            color:#000;
+            font-weight: bold;
+        }
+
+        .name input {
+            background-color: #525ceb;
+            background-image: url(name.png);
+
+            margin:30px 0 0 0;
+        }
+
+        .email input {
+            background-color: #8088
+            background-image: url(email.png);
+
+            margin:10px;
+        }
+
+        .call input {
+            background-color: #a8ae
+            background-image: url(call.png);
+        }
+
+        input:hover {
+            background-color: #d5d9ff;
+        }
+
+        input:focus {
+            background-color: #fff;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <section class="name">
+        <input type="text" name="userName" id="userName" placeholder="이름을 입력하세요">
+    </section>
+
+    <section class="email">
+            <input type="text" name="userEmail" id="userEmail" placeholder="이메일을 입력하세요">
+    </section>
+
+    <section class="call">
+        <input type="text" name="userCall" id="userCall" placeholder="연락처를 입력하세요">
+    </section>
+</body>
+</html>
