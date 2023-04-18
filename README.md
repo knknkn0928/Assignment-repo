@@ -11,3 +11,5 @@
 - 230411_layoutEx3 내가해냄
 
 - 230412_backgroundEx
+
+- 230418_fluidLayout2 ~ 3 뭔가 잘못된것 같고 실제로도 잘못됨
