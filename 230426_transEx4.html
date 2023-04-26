@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>transEx4</title>
+  <style>
+
+    .checkbox {
+      background-color: tomato; color:#fff;
+      width:40vw; height: 40vw; margin: 20px 0 0 0;
+      transition: 1s;
+      overflow: hidden;      
+    }
+    .block {
+      background-color: skyblue;
+      width:60vw; height: 15vw;
+    }
+
+    input[type=checkbox]:checked ~ .checkbox {
+      transform: translatey(-50%) scaleY(0);
+      /*
+        헐... 나... 천재일지도
+        translatey(-50%) 먼저 적용해서 위로 올리면서 scaley(0)으로 축소 
+      */
+    }
+
+  </style>
+</head>
+<body>
+  <h1>trans 연습 2</h1>
+  <input type="checkbox" id="check" name="checkbox">
+  <label for="check">체크박스가 체크되면 박스가 위로 올라와 사라집니다</label>
+
+  <div class="checkbox">
+    <h2>:checked</h2>
+    창공에 살 어디 이것을 되려니와, 찾아 전인 있는 사랑의 있는가? 풍부하게 미묘한 길지 품에 창공에 쓸쓸하랴? 이는 일월과 이상의 피고 할지니, 이상 피어나는 천지는 봄바람이다.
+  </div>
+  <div class="block">block</div>
+</body>
+</html>
