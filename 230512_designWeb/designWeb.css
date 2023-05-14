@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+header {
+  width: 100%;
+  position: relative;
+}
+header .menu-bar {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1920px;
+  width: 100%;
+  height: 260px;
+  padding: 20px 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(20, 20, 20, 0) 10%,
+    rgba(20, 20, 20, 0.25) 25%,
+    rgba(20, 20, 20, 0.5) 50%,
+    rgba(20, 20, 20, 0.75) 75%,
+    rgba(20, 20, 20, 1) 100%
+  );
+  position: absolute;
+}
+header .menu-bar .logo {
+  margin-left: 40px;
+}
+header .menu-bar .logo img {
+  height: 33px;
+}
+header .menu-bar .menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+header .menu-bar .menu a {
+  font-family: "SF_HambakSnow";
+  display: block;
+  font-size: 20px;
+  padding: 5px 4vw;
+  color: #fff;
+}
+
+header .menu-bar .contact {
+  font-family: "Pretendard-Regular";
+  font-size: 0.9;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  display: block;
+  padding: 5px 15px;
+  border-radius: 30px;
+  margin-right: 40px;
+  transition: 0.3s;
+}
+
+header .menu-bar .contact:hover {
+  background-color: #aa853d;
+}
+
+header .header-slider img {
+  display: block;
+  width: 100%;
+  height: 940px;
+  object-fit: cover;
+}
+
+.top {
+  margin-top: 10vh;
+  width: 100%;
+}
+
+/* section1 */
+
+.sec1 ul {
+  font-family: "SF_HambakSnow";
+  font-size: 1.8rem;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+  width: 35vw;
+}
+
+.sec1 ul li a {
+  display: block;
+  color: #d9d9d9;
+  padding: 5px;
+  position: relative;
+}
+
+.sec1 ul li a:hover {
+  color: #000;
+  transition: 0.3s;
+}
+
+.sec1 ul li a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-bottom: 2px solid #000;
+  transition: width 0.2s ease-out;
+  left: auto;
+  right: 0;
+  bottom: -5px;
+  width: 0;
+}
+
+.sec1 ul li a:hover:after {
+  width: 80%;
+  left: 10%;
+  right: auto;
+}
+
+.sec1 .museum-img {
+  display: flex;
+  justify-content: center;
+}
+
+.sec1 .museum-img img {
+  width: 23vw;
+  height: 23vw;
+  margin: 0 20px;
+  border: 1px solid #000;
+}
+
+/* section2 */
+
+.sec2 {
+  /* background: url(./images/back1.png) no-repeat contain / 100%; */
+  position: relative;
+}
+
+.sec2 img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.sec2 .sec2_box {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100%;
+  height: 99.7%;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sec2 .sec2_txt {
+  margin: 0 auto;
+  color: #fff;
+  line-height: 3.5em;
+}
+
+.sec2 .sec2_txt h1 {
+  font-family: "SF_HambakSnow";
+  text-align: center;
+  font-size: 3em;
+}
+
+.sec2 .sec2_txt p {
+  font-family: "Pretendard-Regular";
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.sec2 .sec2_video {
+  margin: 0 auto;
+}
+
+.sec2 .sec2_video iframe {
+  width: 75vw;
+  height: 40vw;
+  margin: 20px 0 10px 0;
+  border:1px solid #fff;
+  box-sizing:border-box;
+}
+
+.sec2 .sec2_video ul {
+  display: flex;
+  margin:0;
+}
+.sec2 .sec2_video ul li img {
+  width: 15vw;
+  margin-right: 10px;
+  border:1px solid #fff;
+}
+
+/* section3 */
+
+.sec3 {
+  width: 83vw;
+  margin: 10vh auto;
+}
+.sec3 .flex {
+  display:flex;
+  justify-content: space-between;
+}
+
+
+.sec3 .sec3_1st .sec3_1st_txt {
+  text-align: center;
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec3 .sec3_1st img {
+  width: 33vw;
+}
+
+
+.sec3 .sec3_2nd {
+  display:flex;
+  justify-content: space-between;
+  margin-top:7vh;
+}
+
+.sec3 .sec3_2nd .sec3_2nd_txt {
+  width: 40vw;
+  padding: 0 3vw;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sec3 .sec3_2nd .sec3_2nd_txt h2 {
+  font-family: "SF_HambakSnow";
+  font-weight: 900;
+  font-size: 2.5em;
+  margin: 0 0 1vw 0;
+}
+
+.sec3 .sec3_2nd .sec3_2nd_txt span p {
+  font-family:"Pretendard-Regular";
+  font-weight: 500;
+  padding: 0 1vw 1vw 1vw;
+}
+
+.sec3 .sec3_2nd .sec3_2nd_txt span {
+  border-bottom:1px solid #d9d9d9;
+  display: flex;
+  padding:1vw 0 0 0;
+}
+
+.sec3 .sec3_2nd_img {
+  flex-flow:wrap;
+  width: 33vw;
+  height: 33vw;
+}
+
+.sec3 .sec3_2nd_img li {
+  margin: 0;
+}
+
+.sec3 .sec3_2nd_img img {
+  width: 10vw;
+  height: 10vw;
+  padding-right:1vw;
+}
+
+
+.sec3 .sec3_3rd img {
+  width: 33vw; height: 33vw;
+  object-fit: cover;
+}
+
+
+.sec3_3rd {
+  margin-top:7vh;
+}
+
+.sec3_3rd img {
+  width: 650px;
+}
+
+.sec3_3rd ul {
+  display: flex;
+  width: 40vw;
+  flex-flow:wrap;
+}
+
+.sec3_3rd ul li {
+  width:20vw;
+  display: flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sec3_3rd ul li h2 {
+  font-family: 'MYYeongnamnu';
+  font-weight: 500;
+  font-size: 2.7em;
+}
+.sec3_3rd ul li p {
+  font-family:"Pretendard-Regular";
+  font-weight: 500;
+  padding: 0.3vw 0 1.5vw;
+}
+
+.sec3_3rd ul li .btn {
+  display: block;
+  background-color: #000;
+  color:#fff;
+  padding: 5px 15px;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-family:"Pretendard-Regular";
+  font-weight: 600;
+}
+
+.sec3_3rd ul li .btn:hover {
+  background-color: #aa853d;
+}
+
+
+.sec4 img {
+  width: 100%; height: 85vh;
+  object-fit: cover;
+}

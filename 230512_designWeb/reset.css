@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+ol,
+ul,
+menu {
+  list-style: none;
+  padding: 0;
+}
+
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+menu,
+footer,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
