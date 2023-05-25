@@ -65,6 +65,24 @@ body {
   justify-content: center;
 }
 
+.slider .slider_txt .start_btn {
+  text-decoration: none;
+  background-color: #333333;
+  color:#fff;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 70px;
+  width: 70px; height: 70px;
+  margin: 4vh 0;
+  transition: 0.2s;
+}
+
+.slider .slider_txt .start_btn:hover {
+  transform: scale(1.1);
+  background-color: royalblue;
+}
+
 .slider img {
   width: 45vw;
   object-fit: contain;
