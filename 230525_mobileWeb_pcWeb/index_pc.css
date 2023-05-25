@@ -1,0 +1,525 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Lobster&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Play:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&family=Play:wght@700&display=swap');
+
+p,
+h1,
+h2,
+h3, h5 {
+  margin: 0;
+  
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+.menubar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+  border-bottom:1px solid #efefef;
+}
+
+.menubar .menu {
+  font-family: "lato";
+  list-style: none;
+  display: flex;
+}
+
+.menubar .menu li a {
+  text-decoration: none;
+  padding: 0 2vw;
+  color: #535353;
+  font-weight: bold;
+}
+
+.menubar img {
+  width: 80px;
+  padding: 0 20px;
+}
+
+
+
+.slider {
+  background: url(./images/hero-bg.png) no-repeat center / cover;
+  width: 100%; height: 100vh;
+  display: flex; flex-flow:wrap;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.slider .slider_txt {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slider img {
+  width: 45vw;
+  object-fit: contain;
+  padding: 1vh 0 0 0;
+}
+
+.slider p {
+  padding: 4vh 0 2vh 0;
+  letter-spacing: 1vw;
+}
+
+.slider h1 {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 5rem;
+  font-weight: 100;
+  word-spacing: 1vw;
+}
+
+
+main .sec1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding:15vh 0;
+}
+
+
+main .sec1 .sec1_txt {
+  width: 30vw;
+  padding: 4vh 7vh;
+  position: relative;
+}
+
+
+main .sec1 .sec1_txt:nth-child(1)::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: -1px;
+  border-bottom: 1px solid #eee;
+  position: absolute;
+}
+
+main .sec1 .sec1_txt:nth-child(2):before {
+  content: "";
+  display: block;
+  height: 200%;
+  top: 0;
+  left: -1px;
+  border-left: 1px solid #eee;
+  position: absolute;
+}
+
+/* main .sec1 .sec1_txt:nth-child(3)::after {
+  content: "";
+  display: block;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #eee;
+  position: absolute;
+} */
+
+main .sec1 .sec1_txt:nth-child(4):before {
+  content: "";
+  display: block;
+  width: 100%;
+  top: 0;
+  left: -1px;
+  border-top: 1px solid #eee;
+  position: absolute;
+}
+
+
+main .sec1 .sec1_txt h3 {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1vh;
+}
+
+main .sec1 .sec1_txt p {
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+
+main .sec2 img {
+  display: block;
+}
+
+main .sec2 {
+  width: 100%;
+  display: grid;
+  grid-auto-rows: 60vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-template-areas:
+    "item1 item1 item2 item7"
+    "item1 item1 item4 item4"
+    "item5 item5 item6 item3";
+}
+
+/* main .sec2 div span {
+  background-color: #efefef;
+} */
+
+main .sec2 .item {
+  position: relative;
+  transition: 0.3s;
+}
+main .sec2 .item span {
+  display: none;
+}
+main .sec2 .item p {
+  background-color: rgb(255, 255, 255, 0.5);
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+main .sec2 .item:hover span {
+  display: block;
+  color:royalblue;
+}
+
+
+.item1 {
+  background: url(./images/1.jpg)50% / cover no-repeat;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  height: 60vh;
+}
+
+.item2 {
+  background: url(./images/2.jpg) 50% / cover no-repeat;
+}
+
+.item3 {
+  background: url(./images/7.jpg) 50% / cover no-repeat;
+}
+.item4 {
+  background: url(./images/4.jpg)50% / cover no-repeat;
+  grid-column: 3 / span 2;
+}
+.item5 {
+  background: url(./images/5.jpg)50% / cover no-repeat;
+  grid-column: 1 / span 2;
+
+}
+.item6 {
+  background: url(./images/6.jpg)50% / cover no-repeat;
+}
+.item7 {
+  background: url(./images/3.jpg)50% / cover no-repeat;
+}
+
+
+
+main .sec3 {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  margin: 7vh 0;
+}
+
+main .sec3 .txt_box h2 {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+main .sec3 .txt_box h2::after {
+  content: "";
+  display: block; width: 3vw;
+  border-bottom: 2px solid #000;
+  margin:3vh auto;
+}
+
+main .sec3 .txt_box p {
+  font-size: 1.2rem;
+}
+
+main .sec3 .flex-box {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  margin: 5vh 0;
+}
+main .sec3 .img_box {
+  padding:1vw;
+}
+
+main .sec3 .img_box img {
+  width: 40vw;
+  padding: 2vh 0;
+}
+
+main .sec3 .img_box h5 {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 1.5rem;
+  margin: 1vh 0;
+}
+
+
+main .sec4 {
+  background-color: #efefef;
+  padding: 10vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .sec4 h2 {
+  width: 30vw;
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 3rem;
+  margin: 1vh 0;
+}
+main .sec4 p {
+  width: 50vw;
+  font-size: 1.3rem;
+}
+
+main .sec4 iframe {
+  width: 80vw;
+  height: 45vw;
+  padding-top: 10vh;
+}
+
+main h2 {
+  text-align: center;
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+
+  margin:13vh auto;
+}
+
+main h2::after {
+  content: "";
+  display: block; width: 3vw;
+  border-bottom: 2px solid #000;
+  margin:3vh auto;
+}
+
+main .sec5 p {
+  font-size: 1.2rem;
+}
+
+main .sec5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .sec5 .img-slide {
+  width: 19vw;
+  opacity: 0.3;
+}
+
+main .sec5 .img-slide:nth-child(3) {
+  opacity: 1;
+}
+
+main .sec5 .img-slide div {
+  padding: 2vw;
+}
+
+main .sec5 .img-slide div h5 {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 1.4rem;
+}
+
+main .sec5 .img-slide div p {
+  font-size: 0.9rem;
+}
+
+main .sec5 .img-slide:nth-child(3) {
+  box-shadow: 0 10px 10px #d1d1d1;
+}
+
+main .sec5 .img-slide img {
+  width: 19vw;
+}
+
+main .sec6 {
+  margin: 15vh 0;
+  background-color: #efefef;
+  padding:10vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+main .sec6 img {
+  width: 13vw;
+  opacity: 0.5;
+}
+
+main .sec7 {
+  margin: 15vh;
+}
+
+main .sec7 .category {
+  font-size: 1.9rem;
+  font-weight: bold;
+
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+main .sec7 .category p {
+  padding: 0 10vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+}
+
+main .sec7 .category p:nth-child(1)::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #000;
+  width: 26vw;
+  margin: 0 -10vw;
+}
+
+main .sec7 .info {
+  width: 80%;
+  margin: 5vh auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+main .sec7 .info div {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #efefef;
+  padding:2vh 0;
+}
+
+main .sec7 .info div:last-child {
+  border-bottom: 1px solid #000;
+}
+
+main .sec7 .info div strong {
+  width: 20%;
+}
+main .sec7 .info div p {
+  width: 80%;
+}
+
+
+main .sec8 {
+  text-align: center;
+  margin: 10vh auto;
+  width: 100%;
+  height: 50vh;
+  background-image: url(./images/img-10.jpg);
+  background-attachment: fixed;
+  position: relative;
+}
+
+main .sec8 div {
+  width: 100%; height: 100%;
+  position: absolute;
+  background-color: rgb(65, 105, 225, 0.8);
+  color:#fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .sec8 div h3 {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  font-size: 3.5rem;
+}
+
+main .sec8 div p {
+  padding: 1vh;
+  font-family: "noto sans kr";
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+main .sec8 div a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  margin: 4vh auto 0;
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 10vw;
+  height: 5vh;
+  line-height: 5vh;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+main .sec8 a:hover {
+  background-color: #fff;
+  color: cornflowerblue;
+}
+
+main .sec9 {
+  padding: 5vw;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5vh 0;
+}
+
+main .sec9 img {
+  width: 140px;
+  margin: 2vh 0;
+}
+
+main .sec9 span {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+}
+
+main .sec9 span strong {
+  letter-spacing: 1.5px;
+  margin-bottom:3vh;
+}
+
+footer {
+  background-color: #efefef;
+  text-align: center;
+  padding: 4vh 0;
+}
+
+footer p {
+  padding: 1vh 0;
+}
+
+footer p a {
+  text-decoration: none;
+  color:#000;
+}

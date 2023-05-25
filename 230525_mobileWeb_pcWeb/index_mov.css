@@ -1,0 +1,339 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Lobster&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Lobster&display=swap");
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif, "lato";
+  position: relative;
+}
+
+.menubar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.menubar img {
+  width: 80px;
+  padding: 0 20px;
+}
+.menubar i {
+  padding: 0 20px;
+}
+
+.slider {
+  background-color: rgb(248, 217, 221);
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+  padding: 6vh 0 0 0;
+}
+
+.slider p {
+  padding: 4vh 0 2vh 0;
+  letter-spacing: 1vw;
+}
+
+.slider h1 {
+  font-family: "lato";
+  font-size: 3rem;
+  font-weight: 100;
+  word-spacing: 1vw;
+}
+
+.slider .start_btn {
+  margin: 3vh auto;
+  text-decoration: none;
+  display: block;
+  border-radius: 70px;
+  background-color: rgba(34, 34, 34);
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+}
+
+.slider .start_btn:hover {
+  background-color: coral;
+}
+
+.slider img {
+  width: 80vw;
+}
+
+main .sec1 {
+  margin: 2vh auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+main .sec1 div {
+  margin-top: 3vh;
+  border-bottom: 1px solid #efefef;
+  padding-bottom: 3vh;
+}
+
+main .sec1 div:last-child {
+  border: none;
+}
+
+main .sec2 {
+  margin: 5vh 0 10vh 0;
+}
+main .sec2 div {
+  position: relative;
+}
+
+main .sec2 div img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+main .sec2 div:nth-child(4) img {
+  height: 25vh;
+}
+
+main .sec2 div:nth-child(5) img {
+  height: 25vh;
+}
+
+main .sec2 div span {
+  font-family: "lato";
+  font-weight: bold;
+  font-size: 2rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+main .sec2 .txt_box {
+  margin: 2vh auto;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+main .sec2 .txt_box h2 {
+  font-family: "lato";
+  font-size: 2.5rem;
+  margin: 1vh;
+}
+
+main .sec2 .txt_box h2::after {
+  content: "";
+  display: block;
+  width: 4vw;
+  margin: 3vh auto;
+  border-bottom: 3px solid #000;
+}
+
+main .sec2 .txt_box p {
+  font-family: "noto sans kr";
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+main .sec3 {
+  margin: 0 auto;
+}
+
+main .sec3 div {
+  margin: 5vh auto;
+  width: 80%;
+  text-align: center;
+}
+
+main .sec3 div img {
+  display: block;
+  margin: 3vh auto;
+  width: 100%;
+}
+
+main .sec4 {
+  background-color: #efefef;
+  padding: 10vw;
+}
+
+main .sec4 h2 {
+  font-family: "lato";
+  font-size: 2.5rem;
+}
+
+main .sec4 p {
+  font-family: "noto sans kr";
+  font-weight: 300;
+  margin: 3vh 0;
+}
+
+main .sec4 iframe {
+  width: 100%;
+  height: 43vw;
+}
+
+main .sec5 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .sec5 h2 {
+  font-family: "lato";
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 5vh 0;
+}
+
+main .sec5 h2::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #000;
+  width: 10vw;
+  margin: 6vh auto;
+}
+
+main .sec5 img {
+  display: block;
+  width: 100%;
+  margin: 3vh auto;
+}
+
+main .sec6 {
+  background-color: #efefef;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 7vh 3vh;
+}
+main .sec6 img {
+  width: 30%;
+  opacity: 0.6;
+}
+
+main .sec7 {
+  width: 80%;
+  margin: 5vh auto;
+}
+
+main .sec7 h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+main .sec7 div {
+  padding: 2vh 0;
+  border-bottom: 1px solid #efefef;
+}
+
+main .sec7 div:last-child {
+  border-bottom: 1px solid #000;
+}
+
+main .sec7 .category {
+  width: 100%;
+  margin: 3vh 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+main .sec7 .category p {
+  padding: 0 4vw;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #efefef;
+}
+main .sec7 .category p:nth-child(1)::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #000;
+  width: 20vw;
+  margin: 0 -4vw;
+}
+
+main .sec8 {
+  text-align: center;
+  margin: 5vh auto;
+  width: 100%;
+  height: 50vh;
+  background-image: url(./images/img-10.jpg);
+  background-attachment: fixed;
+}
+
+main .sec8 h3 {
+  font-size: 1.5rem;
+  font-family: "lato";
+}
+
+main .sec8 p {
+  padding: 3vh;
+  font-family: "noto sans kr";
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+main .sec8 a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #fff;
+  width: 30vw;
+  height: 5vh;
+  line-height: 5vh;
+}
+
+main .sec8 a:hover {
+  background-color: #fff;
+  color: cornflowerblue;
+}
+
+main .sec9 {
+  padding: 5vw;
+  display: flex;
+  flex-flow: column;
+  margin: 5vh 0;
+}
+
+main .sec9 img {
+  width: 140px;
+  margin: 2vh 0;
+}
+
+main .sec9 strong {
+  margin: 2vh 0;
+}
+
+footer {
+  background-color: #efefef;
+  text-align: center;
+  padding: 4vh 0;
+}
+
+footer p {
+  padding: 1vh 0;
+}
